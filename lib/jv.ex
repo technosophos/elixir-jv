@@ -1,7 +1,5 @@
-require Logger
 defmodule JV do
   def find(path, filename) do
-    Logger.debug "Looking for #{path} in #{filename}"
     data = File.read! filename
     json = Poison.Parser.parse! data
     path_match(path, json)
@@ -18,7 +16,6 @@ defmodule JV do
   end
 
   def path_match([], json) do
-    Logger.debug "I seem to be out of path."
     json
   end
 
