@@ -1,0 +1,11 @@
+{
+  "name": "Foo",
+  "this": {"is":{"the":{"way":{"the":{"world": "ends"}}}}},
+  "not": [
+    "with", "a", "bang", "but", {"a": "whimper"}
+  ],
+  "boolean": true,
+  "integer": 1234,
+  "float": 1.234,
+  "string": "easy"
+}
