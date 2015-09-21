@@ -32,6 +32,23 @@ $ jv /two example2.json
 {"legit":["start","stop","quit"]}
 ```
 
+If you give JV multiple files, it will run the query on every file, and
+produce a line of output for each:
+
+```
+$ jv /this example2.json example.json
+null
+{"is":{"the":{"way":{"the":{"world":"ends"}}}}}
+```
+
+## Future
+
+In the future, we'll hopefully support:
+
+- POSIX regular expressions
+- Relative paths
+- Better error handling
+
 ## Building
 
 To build, you will need the Elixir runtime. From there, you can check
